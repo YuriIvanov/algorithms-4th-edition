@@ -1,1 +1,2 @@
-Algorithms. Fourth Edition. Robert Sedgewick. Kevin Wayne.
+# algorithms-4th-edition
+Algorithms 4th edition. Robert Sedgewick. Kevin Wayne. Exercises.
