@@ -8,4 +8,119 @@
     <artifactId>algorithms-4th-edition</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <!--Common-->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!--Test-->
+        <testClassesDir>${basedir}/target/test-classes</testClassesDir>
+        <suiteDir>${testClassesDir}/suites</suiteDir>
+
+        <!--Test run settings.-->
+        <surfire.threadPoolSizeValue>1</surfire.threadPoolSizeValue>
+
+        <!--Reporting-->
+        <allure.results.directory>${basedir}/target/allure-results</allure.results.directory>
+
+        <!--Suites-->
+        <tempSuiteFile>temp.xml</tempSuiteFile>
+        <integrationSuiteFile>integration.xml</integrationSuiteFile>
+
+        <!--Configurations-->
+        <configDir>${basedir}/src/config</configDir>
+        <commonConfigDir>${configDir}/common</commonConfigDir>
+        <loggingConfigDir>${configDir}/logging</loggingConfigDir>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.26</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+            </resource>
+            <resource>
+                <directory>${commonConfigDir}</directory>
+            </resource>
+            <resource>
+                <directory>${loggingConfigDir}</directory>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>${basedir}/src/test/resources</directory>
+            </testResource>
+        </testResources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${currentSuiteFile}</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <properties>
+                        <property>
+                            <name>suitethreadpoolsize</name>
+                            <value>${surfire.threadPoolSizeValue}</value>
+                        </property>
+                    </properties>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.1.0</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>integration</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <currentSuiteFile>${suiteDir}/${integrationSuiteFile}</currentSuiteFile>
+            </properties>
+        </profile>
+        <profile>
+            <id>temp</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <currentSuiteFile>${suiteDir}/${tempSuiteFile}</currentSuiteFile>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>
