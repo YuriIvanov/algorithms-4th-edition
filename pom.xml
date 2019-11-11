@@ -20,8 +20,8 @@
         <surfire.threadPoolSizeValue>1</surfire.threadPoolSizeValue>
 
         <!--Suites-->
-        <tempSuiteFile>temp.xml</tempSuiteFile>
-        <integrationSuiteFile>integration.xml</integrationSuiteFile>
+        <tempSuiteFile>Temp.xml</tempSuiteFile>
+        <integrationSuiteFile>Integration.xml</integrationSuiteFile>
 
         <!--Configurations-->
         <configDir>${basedir}/src/config</configDir>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Fundamentals examples tests.">
+    <suite-files>
+        <suite-file path="basicprogrammingmodel/BasicProgrammingModelExamplesTests.xml"/>
+        <suite-file path="dataabstraction/DataAbstractionExamplesTests.xml"/>
+        <suite-file path="bagsqueuesstacks/BagsQueuesStacksExamplesTests.xml"/>
+        <suite-file path="analysisofalgorithms/AnalysisOfAlgorithmsExamplesTests.xml"/>
+        <suite-file path="casestudyunionfind/CaseStudyUnionFindExamplesTests.xml"/>
+    </suite-files>
+</suite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Searching examples tests.">
+    <suite-files>
+        <suite-file path="symboltables/SymbolTablesExamplesTests.xml"/>
+        <suite-file path="binarysearchtrees/BinarySearchTreesExamplesTests.xml"/>
+        <suite-file path="balancedsearchtrees/BalancedSearchTreesExamplesTests.xml"/>
+        <suite-file path="hashtables/HashTablesExamplesTests.xml"/>
+        <suite-file path="applications/ApplicationsExamplesTests.xml"/>
+    </suite-files>
+</suite>

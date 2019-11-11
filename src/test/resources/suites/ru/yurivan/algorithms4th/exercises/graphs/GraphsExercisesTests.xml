@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Graphs exercises tests.">
+    <suite-files>
+        <suite-file path="undirectedgraphs/UndirectedGraphsExercisesTests.xml"/>
+        <suite-file path="directedgraphs/DirectedGraphsExercisesTests.xml"/>
+        <suite-file path="minimumspanningtrees/MinimumSpanningTreesExercisesTests.xml"/>
+        <suite-file path="shortestpaths/ShortestPathsExercisesTests.xml"/>
+    </suite-files>
+</suite>

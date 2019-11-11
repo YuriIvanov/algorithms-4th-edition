@@ -11,7 +11,7 @@ public class SettingsManager {
     private static final String SETTINGS_COMMON_RESOURCE_BUNDLE_NAME = "common";
     private static final String SETTING_KEY_MAX_RETRY_COUNT = "qa.max.retry.count";
 
-    private final String TEST_DATA_FOLDER_PATH = "/testdata/ru/yurivan/algorithms4th";
+    private static final String TEST_DATA_FOLDER_PATH = "/testdata/ru/yurivan/algorithms4th";
 
     private final CommonSettings COMMON_SETTINGS;
 

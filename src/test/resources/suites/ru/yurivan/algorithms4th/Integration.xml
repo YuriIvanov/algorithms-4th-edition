@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="All tests in project.">
+     <suite-files>
+         <suite-file path="examples/ExamplesTests.xml"/>
+         <suite-file path="exercises/ExercisesTests.xml"/>
+     </suite-files>
+</suite>

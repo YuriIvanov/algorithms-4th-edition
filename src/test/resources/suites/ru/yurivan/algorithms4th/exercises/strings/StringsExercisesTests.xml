@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Strings exercises tests.">
+    <suite-files>
+        <suite-file path="stringsorts/StringSortsExercisesTests.xml"/>
+        <suite-file path="tries/TriesExercisesTests.xml"/>
+        <suite-file path="substringsearch/SubstringSearchExercisesTests.xml"/>
+        <suite-file path="reqularexpressions/RegularExpressionsExercisesTests.xml"/>
+        <suite-file path="datacompression/DataCompressionExercisesTests.xml"/>
+    </suite-files>
+</suite>

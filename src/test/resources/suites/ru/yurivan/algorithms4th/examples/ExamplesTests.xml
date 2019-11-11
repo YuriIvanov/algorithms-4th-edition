@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="All examples tests.">
+    <suite-files>
+        <suite-file path="fundamentals/FundamentalsExamplesTests.xml"/>
+        <suite-file path="sorting/SortingExamplesTests.xml"/>
+        <suite-file path="searching/SearchingExamplesTests.xml"/>
+        <suite-file path="graphs/GraphsExamplesTests.xml"/>
+        <suite-file path="strings/StringsExamplesTests.xml"/>
+        <suite-file path="context/ContextExamplesTests.xml"/>
+    </suite-files>
+</suite>

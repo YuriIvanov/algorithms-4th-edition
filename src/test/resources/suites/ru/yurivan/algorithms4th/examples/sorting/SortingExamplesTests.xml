@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Sorting examples tests.">
+    <suite-files>
+        <suite-file path="elementarysorts/ElementarySortsExamplesTests.xml"/>
+        <suite-file path="mergesort/MergeSortExamplesTests.xml"/>
+        <suite-file path="quicksort/QuickSortExamplesTests.xml"/>
+        <suite-file path="priorityqueues/PriorityQueuesExamplesTests.xml"/>
+        <suite-file path="applications/ApplicationsExamplesTests.xml"/>
+    </suite-files>
+</suite>
