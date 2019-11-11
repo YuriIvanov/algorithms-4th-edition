@@ -14,13 +14,10 @@
 
         <!--Test-->
         <testClassesDir>${basedir}/target/test-classes</testClassesDir>
-        <suiteDir>${testClassesDir}/suites</suiteDir>
+        <suiteDir>${testClassesDir}/suites/ru/yurivan/algorithms4th</suiteDir>
 
         <!--Test run settings.-->
         <surfire.threadPoolSizeValue>1</surfire.threadPoolSizeValue>
-
-        <!--Reporting-->
-        <allure.results.directory>${basedir}/target/allure-results</allure.results.directory>
 
         <!--Suites-->
         <tempSuiteFile>temp.xml</tempSuiteFile>
