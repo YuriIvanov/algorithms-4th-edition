@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Binary search example tests.">
+    <test name="Binary search example tests.">
+        <classes>
+            <class name="ru.yurivan.algorithms4th.examples.fundamentals.basicprogrammingmodel.BinarySearchExampleTests"/>
+        </classes>
+    </test>
+</suite>

@@ -31,6 +31,14 @@
 
     <dependencies>
         <dependency>
+            <groupId>edu.princeton.cs.introcs</groupId>
+            <artifactId>stdlib-package</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/stdlib-package.jar</systemPath>
+        </dependency>
+
+        <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.14.3</version>

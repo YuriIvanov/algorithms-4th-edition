@@ -3,5 +3,6 @@
 
 <suite name="Basic programming model examples tests.">
     <suite-files>
+        <suite-file path="BinarySearchExampleTests.xml"/>
     </suite-files>
 </suite>
