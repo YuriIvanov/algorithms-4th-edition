@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.yurivan</groupId>
+    <groupId>yurivan</groupId>
     <artifactId>algorithms-4th-edition</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -14,7 +14,7 @@
 
         <!--Test-->
         <testClassesDir>${basedir}/target/test-classes</testClassesDir>
-        <suiteDir>${testClassesDir}/suites/ru/yurivan/algorithms4th</suiteDir>
+        <suiteDir>${testClassesDir}/suites/yurivan/algorithms4th</suiteDir>
 
         <!--Test run settings.-->
         <surfire.threadPoolSizeValue>1</surfire.threadPoolSizeValue>
@@ -26,6 +26,7 @@
         <!--Configurations-->
         <configDir>${basedir}/src/config</configDir>
         <commonConfigDir>${configDir}/common</commonConfigDir>
+        <testConfigDir>${configDir}/test</testConfigDir>
         <loggingConfigDir>${configDir}/logging</loggingConfigDir>
     </properties>
 
@@ -63,6 +64,9 @@
             </resource>
             <resource>
                 <directory>${commonConfigDir}</directory>
+            </resource>
+            <resource>
+                <directory>${testConfigDir}</directory>
             </resource>
             <resource>
                 <directory>${loggingConfigDir}</directory>

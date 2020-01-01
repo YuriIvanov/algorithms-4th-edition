@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite for temp test configurations.">
+    <test name="Binary search example tests.">
+        <classes>
+            <class name="yurivan.algorithms4th.examples.fundamentals.basicprogrammingmodel.BinarySearchExampleTests">
+                <methods>
+                    <include name="binarySearchPerformanceEstimation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
