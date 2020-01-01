@@ -56,7 +56,10 @@ public class BinarySearchExampleTests extends BaseTest {
         log.info("Values that are not in whitelist:");
         while (!valuesFile.isEmpty()) {
             final int key = valuesFile.readInt();
-            if (BinarySearch.rank(key, whitelist) < 0) {
+            if (BinarySearch.rank(
+                    key,
+                    whitelist,
+                    BinarySearch.BinarySearchArraySortDirection.ASCENDING) < 0) {
                 log.info("{}", key);
             }
         }
@@ -76,7 +79,10 @@ public class BinarySearchExampleTests extends BaseTest {
         // Start estimation.
         final StopwatchCPU stopwatchCpu = new StopwatchCPU();
         for (int key : values) {
-            BinarySearch.rank(key, whitelist);
+            BinarySearch.rank(
+                    key,
+                    whitelist,
+                    BinarySearch.BinarySearchArraySortDirection.ASCENDING);
         }
         log.info(
                 "Performance of this binary search implementation.\n" +
