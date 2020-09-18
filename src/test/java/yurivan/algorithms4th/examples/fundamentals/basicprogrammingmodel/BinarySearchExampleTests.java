@@ -22,7 +22,7 @@ public class BinarySearchExampleTests extends BaseTest {
     private static final String TINY_VALUES_TEST_DATA_FILE_PATH = "tinyT.txt";
 
     private static final String LARGE_WHITELIST_TEST_DATA_FILE_PATH = "largeW.txt";
-    private static final String LARGE_VALUES_TEST_DATA_FILE_PATH = "largeW.txt";
+    private static final String LARGE_VALUES_TEST_DATA_FILE_PATH = "largeT.txt";
 
     private Path tinyWhitelistFile;
     private Path tinyValuesFile;
