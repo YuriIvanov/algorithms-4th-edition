@@ -15,7 +15,7 @@ package yurivan.algorithms4th.exercises.fundamentals.bagsqueuesstacks.ex_1_3_33;
             Item popLeft()            remove an item from the left end
             Item popRight()           remove an item from the right end
 
-    Write  a  class   Deque that uses a doubly-linked list to implement this API and a class
+    Write a class Deque that uses a doubly-linked list to implement this API and a class
     ResizingArrayDeque that uses a resizing array.
  */
 
