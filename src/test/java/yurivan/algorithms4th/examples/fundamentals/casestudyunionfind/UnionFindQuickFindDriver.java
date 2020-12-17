@@ -1,16 +1,14 @@
-package yurivan.algorithms4th.exercises.fundamentals.casestudyunionfind;
+package yurivan.algorithms4th.examples.fundamentals.casestudyunionfind;
 
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
-import yurivan.algorithms4th.examples.fundamentals.casestudyunionfind.UnionFind;
-import yurivan.algorithms4th.examples.fundamentals.casestudyunionfind.UnionFindWeightedQuickUnion;
 
-public class UnionFindWeightedQuickUnionDriver {
+public class UnionFindQuickFindDriver {
     public static void main(String[] args) {
         // Solve dynamic connectivity problem on StdIn.
 
         final int size = StdIn.readInt(); // Read number of sites.
-        UnionFind unionFind = new UnionFindWeightedQuickUnion(size); // Initialize size number of components.
+        UnionFind unionFind = new UnionFindQuickFind(size); // Initialize size number of components.
 
         while (!StdIn.isEmpty()) {
             // Read pair to connect.
